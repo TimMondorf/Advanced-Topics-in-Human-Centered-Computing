@@ -29,7 +29,6 @@ links = ["Visibility (pictograms)",
     "Eye tracker as input device",
     "Ambient display media",
     "Invitation spreads autonomously",
-    "Believable proxy of human behavior",
     "Inspirationalist view of creativity",
     "Subtly encourage self-transcendent values",
     "Humans are subtle, computers are not",
@@ -77,10 +76,10 @@ mindmap.add_edge(edge)
 edge = pydot.Edge(nodes["Invitation spreads autonomously"], nodes["Park generative agents"])
 mindmap.add_edge(edge)
 
-edge = pydot.Edge(nodes["Nudging"], nodes["Believable proxy of human behavior"])
+edge = pydot.Edge(nodes["Nudging"], nodes["Humans are subtle, computers are not"])
 mindmap.add_edge(edge)
 
-edge = pydot.Edge(nodes["Believable proxy of human behavior"], nodes["Park generative agents"])
+edge = pydot.Edge(nodes["Humans are subtle, computers are not"], nodes["Park generative agents"])
 mindmap.add_edge(edge)
 
 edge = pydot.Edge(nodes["Nudging"], nodes["Inspirationalist view of creativity"])
@@ -105,4 +104,5 @@ edge = pydot.Edge(nodes["Smaller touch devices"], nodes["Holz touch devices"])
 mindmap.add_edge(edge)
 
 mindmap.write_jpg("mindmap.jpg")
+
 os.startfile("mindmap.jpg")
