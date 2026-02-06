@@ -10,7 +10,7 @@ refs.set_ranksep("0.8")
 
 nodes = dict()
 
-articles = ["POHL subtle",
+articles = ["Pohl subtlety",
     "Klemmer human body",
     "Wobbrock 2011 disabilities",
     "Ishii combine physical and virtual world",
@@ -46,7 +46,7 @@ for a in flowdowns+links:
     nodes[a] = nodo
 
 for b in flowdowns:
-    edge = pydot.Edge(nodes["Pohl subtle"], nodes[b])
+    edge = pydot.Edge(nodes["Pohl subtlety"], nodes[b])
     mindmap.add_edge(edge)
 
 edge = pydot.Edge(nodes["Do less"], nodes["Visibility (pictograms)"])
@@ -76,7 +76,7 @@ mindmap.add_edge(edge)
 edge = pydot.Edge(nodes["Invitation spreads autonomously"], nodes["Park generative agents"])
 mindmap.add_edge(edge)
 
-edge = pydot.Edge(nodes["Nudging"], nodes["Humans are subtle, computers are not"])
+edge = pydot.Edge(nodes["Pohl subtle"], nodes["Humans are subtle, computers are not"])
 mindmap.add_edge(edge)
 
 edge = pydot.Edge(nodes["Humans are subtle, computers are not"], nodes["Park generative agents"])
@@ -94,7 +94,13 @@ mindmap.add_edge(edge)
 edge = pydot.Edge(nodes["Subtly encourage self-transcendent values"], nodes["Knowles sustainability"]),
 mindmap.add_edge(edge)
 
-edge = pydot.Edge(nodes["Pohl subtle"], nodes["Humans are subtle, computers are not"])
+edge = pydot.Edge(nodes["Pohl subtlety"], nodes["Humans are subtle, computers are not"])
+mindmap.add_edge(edge)
+
+edge = pydot.Edge(nodes["Pohl subtlety"], nodes["Humans are subtle, computers are not"])
+mindmap.add_edge(edge)
+
+edge = pydot.Edge(nodes["Humans are subtle, computers are not"], nodes["Hollan: face-to-face real-time interaction"])
 mindmap.add_edge(edge)
 
 edge = pydot.Edge(nodes["Do less"], nodes["Smaller touch devices"])
@@ -106,3 +112,4 @@ mindmap.add_edge(edge)
 mindmap.write_jpg("mindmap.jpg")
 
 os.startfile("mindmap.jpg")
+
